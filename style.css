@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+  width: 100%;
+}
+/* GLobal CSS */
+img{
+  max-width: 100%;
+  object-fit: cover;
+}
+.obj-width {
+  max-width: 1400px;
+  margin: auto;
+}
+nav {
+  background-color: #2d4c50;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-bar {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+}
+.result {
+  height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.result p {
+  font-size: 1.5rem;
+  padding-left: 66px;
+}
+#page {
+  margin-left: 20px;
+}
+#search-button {
+  max-width: 100px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.4 rem;
+  cursor: pointer;
+  margin-right: 10px;
+}
+#search-input {
+  max-width: 400px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.4 rem;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+}
+#blog-container {
+  width: 100vw;
+  /* padding: 3rem 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.blog-card {
+  width: 90%;
+  max-width: 320px;
+  height: 500px; /* Set a fixed height */
+  border: 1px solid #2d4c50;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem;
+  cursor: pointer;
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.blog-card:hover {
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.blog-card h2 {
+  color: #141414;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.blog-card p {
+  font-size: 1.2rem;
+  padding-top: 0.7rem;
+}
+
+/* responsive part */
+@media (max-width: 600px) {
+  #search-input {
+    width: 80px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    margin-right: 1px;
+  }
+  #search-button {
+    width: 30px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    margin-right: 10px;
+  }
+  #blog-container {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .blog-card {
+    width: 310px;
+    border: 1px solid #2d4c50;
+    padding: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+  }
+}
+.more {
+  width: 100vw;
+  height: 100px;
+  font-size: 1.2 rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+#show-more {
+  margin-top: 20px;
+  width: 10%;
+  height: 35%;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
